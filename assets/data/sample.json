@@ -1,0 +1,32 @@
+[
+    {
+        "rt": "01",
+        "pilah": "Ya",
+        "jenis": "Organik",
+        "cara": "TPS"
+    },
+    {
+        "rt": "02",
+        "pilah": "Tidak",
+        "jenis": "Plastik",
+        "cara": "Dibakar"
+    },
+    {
+        "rt": "03",
+        "pilah": "Ya",
+        "jenis": "Kertas",
+        "cara": "Bank Sampah"
+    },
+    {
+        "rt": "01",
+        "pilah": "Ya",
+        "jenis": "Organik",
+        "cara": "Kompos"
+    },
+    {
+        "rt": "04",
+        "pilah": "Tidak",
+        "jenis": "B3",
+        "cara": "TPS"
+    }
+]

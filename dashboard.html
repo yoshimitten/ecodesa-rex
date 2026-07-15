@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoDesa | Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<script src="assets/js/dashboard.js"></script>
+
+<body>
+
+    <!-- Navbar -->
+
+    <!-- Nanti copy navbar dari index -->
+
+    <!-- Dashboard Hero -->
+
+    <section class="dashboard-hero">
+
+        <div class="container text-center">
+
+            <h1>
+
+                Dashboard Data Sampah
+
+            </h1>
+
+            <p>
+
+                Menampilkan hasil survei masyarakat secara realtime
+                menggunakan Google Spreadsheet.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Statistik -->
+
+    <section class="dashboard-stat">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-3">
+
+                    <div class="stat-box">
+
+                        <h5>Total Responden</h5>
+
+                        <h2 id="totalResponden">
+
+                            0
+
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="stat-box">
+
+                        <h5>Memilah Sampah</h5>
+
+                        <h2 id="pilah">
+
+                            0%
+
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="stat-box">
+
+                        <h5>Jenis Terbanyak</h5>
+
+                        <h2 id="jenis">
+
+                            -
+
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <div class="stat-box">
+
+                        <h5>Update</h5>
+
+                        <h2 id="update">
+
+                            -
+
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+
+                    <div class="chart-card">
+
+                        <h4>Jenis Sampah</h4>
+
+                        <canvas id="jenisChart"></canvas>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="chart-card">
+
+                        <h4>Cara Pembuangan</h4>
+
+                        <canvas id="caraChart"></canvas>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="pb-5">
+
+        <div class="container">
+
+            <div class="table-responsive">
+
+                <table class="table table-striped">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>RT</th>
+
+                            <th>Jenis Sampah</th>
+
+                            <th>Memilah</th>
+
+                            <th>Cara Pembuangan</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tableData">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
