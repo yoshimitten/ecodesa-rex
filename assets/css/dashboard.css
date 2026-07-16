@@ -1,0 +1,280 @@
+/* ===================================================
+   DASHBOARD ECODESA
+=================================================== */
+
+body{
+    background: #f5f7f8;
+}
+
+/* ===================================================
+   HERO
+=================================================== */
+
+.dashboard-hero{
+
+    padding:120px 0 70px;
+    background:linear-gradient(
+        135deg,
+        #198754,
+        #2ca56a
+    );
+
+    color:white;
+
+}
+
+.dashboard-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.dashboard-hero h1{
+
+    margin-top:20px;
+
+    font-size:2.8rem;
+
+    font-weight:700;
+
+}
+
+.dashboard-hero p{
+
+    margin-top:15px;
+
+    font-size:1.05rem;
+
+    color:rgba(255,255,255,.85);
+
+}
+
+/* ===================================================
+   CARD STATISTIK
+=================================================== */
+
+.dashboard-stat{
+
+    margin-top:-45px;
+
+    padding-bottom:60px;
+
+}
+
+.stat-box{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:100%;
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(25,135,84,.15);
+
+}
+
+.stat-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#eaf8f0;
+
+    color:#198754;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1.8rem;
+
+    margin-bottom:18px;
+
+}
+
+.stat-box h2{
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    color:#198754;
+
+}
+
+.stat-box h5{
+
+    color:#666;
+
+    font-size:.95rem;
+
+    margin-top:8px;
+
+}
+
+/* ===================================================
+   CHART
+=================================================== */
+
+.chart-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.chart-card h4{
+
+    margin-bottom:25px;
+
+    font-weight:600;
+
+    color:#198754;
+
+}
+
+/* Membatasi tinggi chart */
+
+.chart-card canvas{
+
+    max-height:350px;
+
+}
+
+/* ===================================================
+   TABLE
+=================================================== */
+
+.table-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.table-card h4{
+
+    margin-bottom:20px;
+
+    color:#198754;
+
+    font-weight:600;
+
+}
+
+.table thead{
+
+    background:#198754;
+
+    color:white;
+
+}
+
+.table thead th{
+
+    border:none;
+
+}
+
+.table tbody tr{
+
+    transition:.2s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#edf8f2;
+
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:992px){
+
+    .dashboard-hero{
+
+        text-align:center;
+
+        padding:100px 0 60px;
+
+    }
+
+    .dashboard-hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .dashboard-stat{
+
+        margin-top:-25px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .stat-box{
+
+        text-align:center;
+
+    }
+
+    .stat-icon{
+
+        margin:auto auto 20px;
+
+    }
+
+    .dashboard-hero h1{
+
+        font-size:1.8rem;
+
+    }
+
+}

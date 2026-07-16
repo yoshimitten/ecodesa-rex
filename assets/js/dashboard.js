@@ -1,14 +1,16 @@
-async function loadData() {
+async function loadData(){
 
-    const response = await fetch("assets/data/sample.json");
-
-    const data = await response.json();
+    const data = await getData();
 
     updateCards(data);
 
     updateTable(data);
 
+    updateCharts(data);
+
 }
+
+loadData();
 
 function updateCards(data){
 
