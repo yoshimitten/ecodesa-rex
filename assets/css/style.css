@@ -403,7 +403,13 @@ section{
 
 .about-image{
 
-    max-width:500px;
+    display: block;
+
+    margin: auto;
+
+    max-width: 100%;
+
+    height: auto;
 
 }
 
